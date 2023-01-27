@@ -1,3 +1,4 @@
+/* default solution is for mobile */
 body {
     margin: 1rem;
     display: flex;
@@ -43,10 +44,12 @@ body {
     background-color: #e4c1f9;
     border: 0.5rem black solid;
   }
-  
+  /* tablet solution */
   @media screen and (min-width: 481px) {
     body {
-  
+      display: grid;
+      grid-template-columns: 1fr minmax(150px, 30%);
+      grid-template-rows: auto auto 1fr auto;
     }
   
     .header {
@@ -69,10 +72,10 @@ body {
   
     }
   }
-  
+  /*desktop solution */
   @media screen and (min-width: 1025px) {
     body {
-  
+      
     }
   
     .navbar {
